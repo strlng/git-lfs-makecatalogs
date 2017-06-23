@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 MAINTAINER Sterling Anderson <sterling.anderson@wisc.edu>
 
-ADD https://raw.githubusercontent.com/munki/munki/v2.8.2/code/client/makecatalogs /usr/local/bin/
+ADD https://raw.githubusercontent.com/munki/munki/v3.0.1/code/client/makecatalogs /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/makecatalogs; \
 apt-get update; \
