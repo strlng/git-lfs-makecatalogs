@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 MAINTAINER Sterling Anderson <sterling.anderson@wisc.edu>
 
-RUN curl https://github.com/munki/munki/archive/v3.0.1.tar.gz -o /usr/local/munki/v3.0.1.tar.gz
+RUN ADD https://github.com/munki/munki/archive/v3.0.1.tar.gz /usr/local/munki/
 RUN tar zxf /usr/local/munki/v3.0.1.tar.gz
 RUN cp -r /usr/local/munki/code/client/* /usr/local/bin
 #ADD https://raw.githubusercontent.com/munki/munki/v3.0.1/code/client/makecatalogs /usr/local/bin/
